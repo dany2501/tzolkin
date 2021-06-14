@@ -20,13 +20,13 @@
         <div class="flex-row no-wrap">
           <h2 class="palabra" id="palabra"></h2>
           <picture>
-            <img src="../img/elahorcado0.jpg" alt="" id="image6">
-            <img src="../img/elahorcado1.jpg" alt="" id="image5">
-            <img src="../img/elahorcado2.jpg" alt="" id="image4">
-            <img src="../img/elahorcado3.jpg" alt="" id="image3">
-            <img src="../img/elahorcado4.jpg" alt="" id="image2">
-            <img src="../img/elahorcado5.jpg" alt="" id="image1">
-            <img src="../img/elahorcado6.jpg" alt="" id="image0">
+            <img src="./img/elahorcado0.jpg" alt="" id="image6">
+            <img src="./img/elahorcado1.jpg" alt="" id="image5">
+            <img src="./img/elahorcado2.jpg" alt="" id="image4">
+            <img src="./img/elahorcado3.jpg" alt="" id="image3">
+            <img src="./img/elahorcado4.jpg" alt="" id="image2">
+            <img src="./img/elahorcado5.jpg" alt="" id="image1">
+            <img src="./img/elahorcado6.jpg" alt="" id="image0">
           </picture>
         </div>
         <div class="flex-row" id="turnos">
