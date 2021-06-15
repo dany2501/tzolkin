@@ -10,11 +10,14 @@
 </head>
 
 <body>
+<div class="container-fluid">
+    <div class="h3 text-center">
+        <a href="login.php">Iniciar sesión</a><br><br>
+        <a href="signup.php">Crear cuenta</a><br><br>
+        <a href="classes.php">Lista de clases</a><br><br>
+        <a href="createclass.php">Crear clase</a><br><br>
+    </div>
+</div>
 
-<a href="login.php">Iniciar sesión</a><br>
-<a href="signup.php">Crear cuenta</a><br>
-<a href="classes.php">Lista de clases</a><br>
-<a href="createclass.php">Crear clase</a><br>
-    
 </body>
 </html>
