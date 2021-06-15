@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Registro de usuario</h1>
 <form action="../api/controller/signup.php" method="POST">
     <div class="row g-3">
         <div class="col-4 mb-3 mx-auto">
@@ -22,10 +20,9 @@
             <input type="password" class="form-control" id="password">
         </div>
     </div>
-    <br>
     <div class="row-g3">
         <div class="col-4 mb-3 mx-auto">
-            <select class="form-select mb-3 mx-auto" name="tipo" id="tipo">
+            <select class="form-select form-select-lg mb-3 mx-auto" name="tipo" id="tipo">
                 <option value="1">Alumno</option>
                 <option value="2">Profesor</option>
                 <option value="3">Administrador</option>
@@ -36,6 +33,6 @@
     <br>
     <button type="submit" class="mx-auto mb-5 btn btn-primary ">Registrarse</button>
 </form>
+    
 </body>
 </html>
-
