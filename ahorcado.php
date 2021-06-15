@@ -9,6 +9,7 @@
 <link rel="stylsheet" href="https://bootswatch.com/5/vapor/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/estilo-ahorcado.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.0.1/dist/vapor/bootstrap.css">
 
 </head>
 <body>
