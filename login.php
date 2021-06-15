@@ -8,15 +8,27 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.css">
 </head>
 <body>
-
+<div class="container-fluid text-center">
+    <h1 class="text-center">Inicio de sesión</h1>
+    <br>
+    <br>
     <form action="../api/controller/login.php" method="POST">
-
-    <input type="text" name="username" id="username" placeholder="Usuario"><br>
-    <input type="text" name="password" id="password" placeholder="Contraseña"><br>
-
-    <input type="submit" value="Iniciar sesión">
-
+        <div class="row g-3">
+            <div class="col-4 mb-3 mx-auto">
+                <label  class="form-label d-flex align-items-start">Usuario:</label>
+                <input type="text" class="form-control" id="username">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-4 mb-3 mx-auto">
+                <label class="form-label d-flex align-items-start">Contraseña:</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="mx-auto mb-5 btn btn-primary ">Iniciar sesión</button>
     </form>
-    
+
+</div>
 </body>
 </html>
