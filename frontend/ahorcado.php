@@ -9,13 +9,39 @@
 <link rel="stylsheet" href="https://bootswatch.com/5/vapor/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/estilo-ahorcado.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.0.1/dist/vapor/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 
 </head>
 <body>
-	<div class="main-container">
+<div class="container mt-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
-        <h1 class="titulo">Juego del ahorcado</h1>
+        <a class="navbar-brand" href="index.php">Tzolkin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms">
+                <li class="nav-item">
+                    <a class="nav-link" href="espanol.html">Espa&ntilde;ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="biologia.html">Biolog&iacute;a</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="matematicas.html">Matem&aacute;ticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+            </ul>
+        </div>
+</div>
+</nav>
+	<div class="container">
+
+        <h1 id="titulo">Juego del ahorcado</h1>
         <h1 id="msg-final"></h1>
         <h3 id="acierto"></h3>
         <div class="flex-row no-wrap">

@@ -2,7 +2,7 @@
 var x=0,y=0;
 
 // Array de palabras
-var palabras = [["Uno", "Primer numero impar"], ["Dos", "Par"], ["Tres", "Segundo impar"], ["Cuatro", "Numero de caras de un cuadrado"], ["Cinco", "Picos de una estrella navideña"], ["Seis", "Número máxico en un dado"]];
+var palabras = [["Uno", "Primer numero impar"], ["Dos", "Par"], ["Tres", "Segundo impar"], ["Cuatro", "Numero de caras de un cuadrado"], ["Cinco", "Picos de una estrella navideña"], ["Seis", "Número máximo en un dado"]];
 // Palabra a averiguar
 var palabra = "";
 // Nº aleatorio
