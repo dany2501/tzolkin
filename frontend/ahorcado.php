@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="author" content="Flores López Luis Divier, Hernández Cárdenas Daniel, González Portilla Daniel Iram,Vera Avelino Oscar">
+    	<meta name="keywords" content="HTML, CSS, cajas, maquetado, listas">
+    	<meta name="copyright" content="Tzolkin">
+    	<meta name="description" content="Menú">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Español</title>
