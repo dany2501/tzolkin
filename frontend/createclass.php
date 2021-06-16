@@ -4,7 +4,7 @@
     <meta name="author" content="Flores López Luis Divier, Hernández Cárdenas Daniel, González Portilla Daniel Iram,Vera Avelino Oscar">
     <meta name="keywords" content="HTML, PHP, Listas">
     <meta name="copyright" content="Tzolkin">
-    <meta name="description" content="Contenedor de actividades de la plataforma">
+    <meta name="description" content="Creación de una nueva materia en la BD">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
