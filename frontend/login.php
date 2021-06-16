@@ -26,7 +26,7 @@
             </div>
         </div>
         <br>
-        <button type="submit" class="mx-auto mb-5 btn btn-primary ">Iniciar sesión</button>
+        <button type="submit" id="button" class="mx-auto mb-5 btn btn-primary">Iniciar sesión</button>
     </form>
 
 </div>

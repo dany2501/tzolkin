@@ -123,7 +123,7 @@ function saveIntent(grade,alumnoId){
   }
     return $.ajax({
         method: "POST",
-        url: '../../tzolkin/api/controller/ahorcado.php',
+        url: '../../tzolkin/api/resource/ahorcadoRes.php',
         data:rq,
         success: (data, status) => {
           console.log(data);
