@@ -39,13 +39,14 @@
     <h1 class="mt-3">Lista de Clases</h1>
     <table class="mt-4 table">
         <tr class="table-success mt-1">
-            <td colspan="4">Tabla de materias</td>
+            <td colspan="5">Tabla de materias</td>
         </tr>
         <tr class="table-primary">
             <td>Id</td>
             <td>Grupo</td>
             <td>Profesor</td>
             <td>Materia</td>
+            <td>Recursos</td>
         </tr>
 
         <?php
@@ -82,14 +83,9 @@
                             break;
                         }
                 ?>
-<<<<<<< HEAD
                     <td><?php echo $materia['nombre'];?></td>
                     <td><a href="<?php echo $ref; ?>">Visitar</a></td>
                 <?php
-=======
-            <td><?php echo $materia['nombre'];?></td>
-            <?php
->>>>>>> 41cd1302ea844af187aa14bd08aef9ef22e19110
                 }
                  ?>
         </tr>

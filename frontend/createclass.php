@@ -49,23 +49,14 @@
             <td>Materia</td>
         </tr>
 
-<<<<<<< HEAD
-        <?php 
-
-=======
         <?php
->>>>>>> 41cd1302ea844af187aa14bd08aef9ef22e19110
             include '../api/bd/conexion.php';
             $connection = openConnection();
 
             $response = mysqli_query($connection,'select * from clases');
 
-<<<<<<< HEAD
-            while($row = mysqli_fetch_array($response)){    
-=======
             while($row = mysqli_fetch_array($response)){
 
->>>>>>> 41cd1302ea844af187aa14bd08aef9ef22e19110
 
         ?>
             <tr>
@@ -85,15 +76,6 @@
                 <?php
                 }
                 ?>
-<<<<<<< HEAD
-            </tr>
-        <?php   
-            }
-        ?>
-    </table>
-<br>
-    
-=======
         <tr>
             <td><?php echo $row['id'];?></td>
             <td><?php echo $row['grupo'];?></td>
@@ -117,7 +99,6 @@
         ?>
     </table><br>
 
->>>>>>> 41cd1302ea844af187aa14bd08aef9ef22e19110
     <form action="../api/controller/createclass.php" method="POST">
 
         <input class="mb-3" type="text" name="name" id="name" placeholder="Nombre de la clase"><br>
