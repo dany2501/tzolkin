@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400,600,800" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/estilo-dados.css">
+	<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.css">
 </head>
 <body>       
 	<div class="container">
