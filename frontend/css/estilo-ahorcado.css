@@ -1,16 +1,9 @@
-* {
-    box-sizing: border-box;
-  }
-  .main-container {
-    max-width: 800px;
-    margin: auto;
-  }
-  h1.titulo {
+h1#titulo {
     margin: 50px auto 80px auto;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
   }
-  h1#msg-final {
+
+h1#msg-final {
     text-align: center;
     color: crimson;
     transition: all .5s ease;
@@ -18,9 +11,11 @@
     min-height: 50px;
     margin-bottom: 0;
   }
+
   .zoom-in {
     transform: scale(1) !important;
   }
+
   #acierto {
     text-align: center;
     min-height: 24px;
