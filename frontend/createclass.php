@@ -13,6 +13,7 @@
 </head>
 <body>
 <div class="container mt-3">
+        <!-- Inicio del navbar de navegación con Links para los otros sitios -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
         <a class="navbar-brand" href="index.php">Tzolkin</a>
@@ -38,6 +39,8 @@
         </div>
 </div>
 </nav>
+    <!-- /Nav -->
+    <!-- Inicio de tabla de clases exraido directamente de la base de datos -->
 <div class="container text-center mt-5">
     <h1>Registro de Clases</h1>
     <table  class="mt-4 table">
@@ -101,8 +104,10 @@
         <?php
             }
         ?>
-    </table><br>
-
+    </table>
+        <!-- /Tabla --> 
+        <br>
+<!-- formulario para creación de clases -->
     <form action="../api/controller/createclass.php" method="POST">
 
         <input class="mb-3" type="text" name="name" id="name" placeholder="Nombre de la clase"><br>
@@ -135,6 +140,7 @@
         <input type="submit" value="Agregar clase">
 
     </form>
+        <!-- /formulario -->
 </div>
 </body>
 </html>
