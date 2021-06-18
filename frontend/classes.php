@@ -14,6 +14,7 @@
 </head>
 <body>
 <div class="container mt-3">
+        <!-- Inicio del navbar de navegación con Links para las materias -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
         <a class="navbar-brand" href="index.php">Tzolkin</a>
@@ -39,6 +40,8 @@
         </div>
 </div>
 </nav>
+    <!-- /nav --> 
+    <!-- Inicio de la tabla con datos extraidos directamente de la base de datos -->
 <div class="container text-center mt-5">
     <h1 class="mt-3">Lista de Clases</h1>
     <table class="mt-4 table">
@@ -97,6 +100,7 @@
         }
     ?>
     </table>
+    <!-- /tabla -->
 </div>
 </body>
 </html>
