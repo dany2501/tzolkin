@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 </head>
 <body>
-
+<!-- formulario de inicio de sesión con verificación de la base de datos -->
 <div class="container-fluid text-center mt-5 bg-ff7851">
 
     <h1 class="text-center">Inicio de sesión</h1>
@@ -35,7 +35,7 @@
         <br>
         <button type="submit" id="button" class="mx-auto mb-5 btn btn-primary">Iniciar sesión</button>
     </form>
-
+<!-- /formulario -->
 </div>
 </body>
 </html>
