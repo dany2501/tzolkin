@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 </head>
 <body>
+    <!-- formulario de registro para la plataforma -->
 <div class="container-fluid text-center mt-5">
 <h1>Registro de usuario</h1>
     <form action="../api/controller/signup.php" method="POST">
@@ -43,6 +44,7 @@
         <br>
         <button type="submit" class="mx-auto mb-5 btn btn-primary ">Registrarse</button>
     </form>
+    <!-- /formulario -->
 </div>
 
 </body>
