@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 </head>
 <body>
+    <!-- resultados de actividad ahorcado para español -->
 <h1>Resultados ahorcado</h1>
     <table border="1">
             <tr>
@@ -40,6 +41,6 @@
            }
         ?>
     </table>
-    
+    <!-- /resultados de actividad ahorcado -->
 </body>
 </html>
