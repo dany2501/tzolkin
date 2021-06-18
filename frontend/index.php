@@ -15,6 +15,8 @@
 
 <body>
 <div class="container mt-3">
+    
+        <!-- Inicio del navbar de navegación con Links para las otras materias -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
         <a class="navbar-brand" href="index.php">Tzolkin</a>
@@ -40,6 +42,8 @@
         </div>
 </div>
 </nav>
+    <!-- /nav -->
+    <!-- lista de links de la página principal --> 
 <div class="container-fluid mt-5">
     <div class="h3 text-center">
         <a href="login.php">Iniciar sesión</a><br><br>
@@ -49,6 +53,6 @@
         <a href="actividades.html">Actividades</a>
     </div>
 </div>
-
+<!-- /links -->
 </body>
 </html>
