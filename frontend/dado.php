@@ -16,6 +16,7 @@
 </head>
 <body>
 <div class="container mt-3">
+        <!-- Inicio del navbar de navegación con Links para las otras materias -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
         <a class="navbar-brand" href="index.php">Tzolkin</a>
@@ -41,6 +42,8 @@
         </div>
 </div>
 </nav>
+    <!-- /nav -->
+    <!-- actividad del dado -->
 <div class="container text-center">
     <br><br>
     <h1>Adivina el numero</h1>
@@ -66,6 +69,7 @@
         <div class="col"></div>
     </div>
 </div>
+    <!-- /actividad del dado -->
 <script src="./js/dado.js"></script>
 </body>
 </html>
