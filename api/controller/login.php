@@ -13,7 +13,7 @@
         //Se imprime la excepción.
         $user = mysqli_query($conection,"select * from usuario where username='".$username."' and password = '".$password."'") or die (mysqli_error($conection));
         //Se redirige al usuario a la pantalla de login.
-        header("Location:http://localhost/tzolkin/frontend/index.php");
+        header("refresh:5,url=http://localhost/tzolkin/frontend/login.php");
         die();
         //Se regresan los datos del usuario.
         return $row = mysqli_fetch_array($user);
