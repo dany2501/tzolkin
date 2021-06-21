@@ -28,7 +28,7 @@
             include '../api/bd/conexion.php';
             $connection = openConnection();
 
-            $results=mysqli_query($connection,"select * from ahorcado where alumno_id = 2") or die (mysqli_error($connection));
+            $results=mysqli_query($connection,"select * from ahorcado") or die (mysqli_error($connection));
             
 
             while ($row = mysqli_fetch_array($results)){
