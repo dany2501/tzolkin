@@ -8,7 +8,6 @@ $(document).ready(()=>{
 
         if(user.val()!="" && password.val()!=""){
             login(user.val(),password.val()).then((response)=>{
-                alert(response)
                 if(response!=null){
                     localStorage.setItem('userId',response[0]);
                     localStorage.setItem('userType',response[3]);
