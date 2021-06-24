@@ -1,7 +1,7 @@
 <?php 
 
     //Importamos el archivo donde definimos las funciones
-    include '../controller/ahorcado.php';
+    include '../controller/login.php';
 
     //Obtenemos el método con el cual se envió la petición
     switch($_SERVER['REQUEST_METHOD']){
@@ -9,7 +9,8 @@
         //Si es post se ejecuta la función saveResult
         // que guarda los resultados de la evaluación
         case 'POST':
-            $data = saveResult($_POST['grade'],$_POST['alumnoId']);
+            $data = login($_POST['username'],$_POST['password']);
+            header('Content-Type: application/json');
             echo $data;
         break;
 

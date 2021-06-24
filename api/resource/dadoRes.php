@@ -1,7 +1,7 @@
 <?php 
 
     //Importamos el archivo donde definimos las funciones
-    include '../controller/ahorcado.php';
+    include '../controller/dado.php';
 
     //Obtenemos el método con el cual se envió la petición
     switch($_SERVER['REQUEST_METHOD']){

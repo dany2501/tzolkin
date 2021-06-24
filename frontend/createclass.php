@@ -10,137 +10,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear grupo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./js/createClass.js"></script>
+        <script src="./js/logout.js"></script>
 </head>
-<body>
-<div class="container mt-3">
-        <!-- Inicio del navbar de navegación con Links para los otros sitios -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-
-        <a class="navbar-brand" href="index.php">Tzolkin</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms">
-                <li class="nav-item">
-                    <a class="nav-link" href="espanol.html">Espa&ntilde;ol</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="biologia.html">Biolog&iacute;a</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matematicas.html">Matem&aacute;ticas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="actividades.html">Actividades</a>
-                </li>
-            </ul>
+    <body>
+        <!-- Menú lateral -->
+        <div class="side-menu">
+            <h3>Bienvenido Juan</h3>
+            <div>
+                <div class="section">
+                    <span>Clases</span>
+                    <a href="./classes.php" class="item">
+                        <div class="icon">
+                            <i class="fa fa-book-open fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Lista de clases</span>
+                    </a>
+                    <a href="javascript:void(0)" class="item item-active">
+                        <div class="icon">
+                            <i class="fa fa-edit fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Crear clase</span>
+                    </a>
+                </div>
+                <div class="section">
+                    <span>Actividades</span>
+                    <a href="./ahorcado.php" class="item">
+                        <div class="icon">
+                            <i class="fab fa-odnoklassniki fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Ahorcado</span>
+                    </a>
+                    <a href="./dado.php" class="item">
+                        <div class="icon">
+                            <i class="fa fa-dice fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Dado</span>
+                    </a>
+                    <a href="./resultados.php" class="item">
+                        <div class="icon">
+                            <i class="fa fa-poll-h fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Resultados</span>
+                    </a>
+                </div>
+                <div class="section">
+                    <span>Materias</span>
+                    <a href="./espanol.html" class="item">
+                        <div class="icon">
+                            <i class="fa fa-pencil-alt fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Español</span>
+                    </a>
+                    <a href="./biologia.html" class="item">
+                        <div class="icon">
+                            <i class="fa fa-microscope fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Biología</span>
+                    </a>
+                    <a href="./matematicas.html" class="item">
+                        <div class="icon">
+                            <i class="fa fa-divide fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Matemáticas</span>
+                    </a>
+                </div>
+                <div class="section">
+                    <span>Cuenta</span>
+                    <a id="logout-btn" href="index.php" class="item">
+                        <div class="icon">
+                            <i class="fa fa-sign-out-alt fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <span>Cerrar sesión</span>
+                    </a>
+                </div>
+            </div>
         </div>
-</div>
-</nav>
-    <!-- /Nav -->
-    <!-- Inicio de tabla de clases exraido directamente de la base de datos -->
-<div class="container text-center mt-5">
-    <h1>Registro de Clases</h1>
-    <table  class="mt-4 table">
+        <!-- Contenido -->
+        <div class="container">
+            <div class="container-content">
+                <!-- Inicio de la tabla con datos extraidos directamente de la base de datos -->
+                <h1 class="mt-2 text-center">Registro de clases</h1>
+                <!-- Inicio de tabla de clases exraido directamente de la base de datos -->
+                
 
-    <table border="1">
-        <tr>
-            <td class="table-success mt-1" colspan="4">Tabla de materias</td>
-        </tr>
-        <tr class="table-primary" >
-            <td>Id</td>
-            <td>Grupo</td>
-            <td>Profesor</td>
-            <td>Materia</td>
-        </tr>
-
-        <?php
-            include '../api/bd/conexion.php';
-            $connection = openConnection();
-
-            $response = mysqli_query($connection,'select * from clases');
-
-            while($row = mysqli_fetch_array($response)){
-
-
-        ?>
-            <tr>
-                <td><?php echo $row['id'];?></td>
-                <td><?php echo $row['grupo'];?></td>
-                <?php
-                    $teacher = mysqli_query($connection,"select * from usuario where id='".$row['profesor_id']."' ");
-                    while($prof = mysqli_fetch_array($teacher)){
-                ?>
-                    <td><?php echo $prof['username'];?></td>
-                <?php
-                }
-                    $class = mysqli_query($connection,"select * from materia where id='".$row['id']."' ");
-                    while($materia = mysqli_fetch_array($class)){
-                ?>
-                    <td><?php echo $materia['nombre'];?></td>
-                <?php
-                }
-                ?>
-        <tr>
-            <td><?php echo $row['id'];?></td>
-            <td><?php echo $row['grupo'];?></td>
-            <?php
-                        $teacher = mysqli_query($connection,"select * from usuario where id='".$row['profesor_id']."' ");
-                        while($prof = mysqli_fetch_array($teacher)){
+                <table class="mt-3 table text-center">
+                        <tr>
+                            <td class="table-success mt-1" colspan="4">Tabla de materias</td>
+                        </tr>
+                        <tr class="table-primary" >
+                            <td>Id</td>
+                            <td>Grupo</td>
+                            <td>Profesor</td>
+                            <td>Materia</td>
+                        </tr>
+                
+                        <?php
+                            include '../api/bd/conexion.php';
+                            $connection = openConnection();
+                
+                            $response = mysqli_query($connection,'select * from clases');
+                
+                            while($row = mysqli_fetch_array($response)){
+                
+                
+                        ?>
+                            <tr>
+                                <td><?php echo $row['id'];?></td>
+                                <td><?php echo $row['grupo'];?></td>
+                                <?php
+                                    $teacher = mysqli_query($connection,"select * from usuario where id='".$row['profesor_id']."' ");
+                                    while($prof = mysqli_fetch_array($teacher)){
+                                ?>
+                                    <td><?php echo $prof['username'];?></td>
+                                <?php
+                                }
+                                    $class = mysqli_query($connection,"select * from materia where id='".$row['materia_id']."' ");
+                                    while($materia = mysqli_fetch_array($class)){
+                                ?>
+                                    <td><?php echo $materia['nombre'];?></td>
+                                <?php
+                                }
+                                ?>
+                        </tr>
+                        <?php
+                            }
+                        ?>
+                    </table>
+                        <!-- /Tabla --> 
+                        <br>
+                        <h1 class="mt-3 text-center">Crear clase</h1><br>
+                <!-- formulario para creación de clases -->
+                <center>
+                
+                        <input class="mb-3" type="text" name="name" id="name" placeholder="Grupo"><br>
+                        <select class="mb-3" name="materia" id="materia">
+                            <option value="0">Materia</option>
+                            <?php
+                        $conection = openConnection();
+                        $data = mysqli_query($conection,"select * from materia") or die (mysqli_error($conection));
+                        while($row = mysqli_fetch_array($data)){
                     ?>
-            <td><?php echo $prof['username'];?></td>
-            <?php
-                    }
-                        $class = mysqli_query($connection,"select * from materia where id='".$row['id']."' ");
-                        while($materia = mysqli_fetch_array($class)){
+                            <option value="<?php echo $row['nombre']; ?>"><?php echo $row['nombre']; ?></option>
+                            <?php
+                            }
+                
                     ?>
-            <td><?php echo $materia['nombre'];?></td>
-            <?php
-                    }
+                        </select><br>
+                        <select class="mb-3" name="grado" id="grado">
+                            <option value="0">Grado</option>
+                            <?php
+                        $grado = mysqli_query($conection,"select * from grado") or die (mysqli_error($conection));
+                        while($row = mysqli_fetch_array($grado)){
                     ?>
-        </tr>
-        <?php
-            }
-        ?>
-    </table>
-        <!-- /Tabla --> 
-        <br>
-<!-- formulario para creación de clases -->
-    <form action="../api/controller/createclass.php" method="POST">
-
-        <input class="mb-3" type="text" name="name" id="name" placeholder="Nombre de la clase"><br>
-        <select class="mb-3" name="materia" id="materia">
-            <option value="0">Seleccionar</option>
-            <?php
-        $conection = openConnection();
-        $data = mysqli_query($conection,"select * from materia") or die (mysqli_error($conection));
-        while($row = mysqli_fetch_array($data)){
-            echo $row['nombre']
-    ?>
-            <option value="<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></option>
-            <?php
-            }
-
-    ?>
-        </select><br>
-        <select class="mb-3" name="grado" id="grado">
-            <option value="0">Seleccionar</option>
-            <?php
-        $grado = mysqli_query($conection,"select * from grado") or die (mysqli_error($conection));
-        while($row = mysqli_fetch_array($grado)){
-    ?>
-            <option value="<?php echo $row['id']; ?>"><?php echo $row['grado']; ?></option>
-            <?php
-            }
-
-    ?>
-        </select><br>
-        <input type="submit" value="Agregar clase">
-
-    </form>
-        <!-- /formulario -->
-</div>
-</body>
+                            <option value="<?php echo $row['grado']; ?>"><?php echo $row['grado']; ?></option>
+                            <?php
+                            }
+                
+                    ?>
+                        </select><br>
+                        <input type="button" id="submit-btn" value="Agregar clase">
+                    </center>
+                        <!-- /formulario -->
+            </div>
+        </div>
+    </body>
 </html>

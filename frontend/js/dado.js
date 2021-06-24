@@ -84,7 +84,7 @@ function pista() {
 // Compruba si ha finalizado
 function compruebaFin() {
   if( oculta.indexOf("_") == -1 ) {
-      saveIntent((y*10)/x,2).then(()=>{
+      saveIntent((y*10)/x,localStorage.getItem('userId')).then(()=>{
         document.getElementById("msg-final").innerHTML = "Felicidades !!";
         document.getElementById("msg-final").className += "zoom-in";
         document.getElementById("palabra").className += " encuadre";
@@ -96,7 +96,7 @@ function compruebaFin() {
       });
     
   }else if( cont == 0 ) {
-    saveIntent((y*10)/x,2).then(()=>{
+    saveIntent((y*10)/x,localStorage.getItem('userId')).then(()=>{
       document.getElementById("msg-final").innerHTML = "Fin del juego";
       document.getElementById("msg-final").className += "zoom-in";
       for (var i = 0; i < buttons.length; i++) {
@@ -125,7 +125,7 @@ function saveIntent(grade,alumnoId){
   }
     return $.ajax({
         method: "POST",
-        url: '../../tzolkin/api/controller/dado.php',
+        url: '../../tzolkin/api/resource/dadoRes.php',
         data:rq,
         success: (data, status) => {
           console.log(data);
