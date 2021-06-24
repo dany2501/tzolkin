@@ -36,7 +36,7 @@
                     </a>
                     <a href="./createclass.php" class="item">
                         <div class="icon">
-                            <i class="fa fa-edit fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-edit fa-lg" aria-hidden="true" id="createclass"></i>
                         </div>
                         <span>Crear clase</span>
                     </a>

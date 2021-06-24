@@ -3,12 +3,12 @@
     // a la base de datos.
     include '../bd/conexion.php';
 
-    function createClass($name,$materia,$grado){
+    function createClass($name,$materia,$grado,$profId){
         
         //Abrimos la conexión y la asignamos a una variable.
         $conection = openConnection();
         //se guarda en la base de datos
-        mysqli_query($conection,"insert into clases(grupo,materia_id,profesor_id,grado_id) VALUES ('".$name."','".(int)$materia."',2,'".(int)$grado."')") or die (mysqli_error($conection));
+        mysqli_query($conection,"insert into clases(grupo,materia_id,profesor_id,grado_id) VALUES ('".$name."','".(int)$materia."',".(int)$profId.",'".(int)$grado."')") or die (mysqli_error($conection));
         //Si es exitoso, regresa un verdadero.
         echo true;
     }

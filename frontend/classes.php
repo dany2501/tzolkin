@@ -34,7 +34,7 @@
                         </div>
                         <span>Lista de clases</span>
                     </a>
-                    <a href="./createclass.php" class="item">
+                    <a href="./createclass.php" class="item" id="createclass">
                         <div class="icon">
                             <i class="fa fa-edit fa-lg" aria-hidden="true"></i>
                         </div>

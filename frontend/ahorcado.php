@@ -35,14 +35,14 @@
                     </a>
                     <a href="javascript:void(0)" class="item ">
                         <div class="icon">
-                            <i class="fa fa-edit fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-edit fa-lg" aria-hidden="true" id="createclass"></i>
                         </div>
                         <span>Crear clase</span>
                     </a>
                 </div>
                 <div class="section">
                     <span>Actividades</span>
-                    <a href="./ahorcado.php" class="item item-active">
+                    <a href="./ahorcado.php" class="item item-active" >
                         <div class="icon">
                             <i class="fab fa-odnoklassniki fa-lg" aria-hidden="true"></i>
                         </div>

@@ -16,8 +16,10 @@
             $materia = $_POST['materia'];
             //Se obtiene la variable que viene por post.
             $grado = $_POST['grado'];
+
+            $profId = $_POST['profId'];
             //Se ejecuta la función enviando los parametros obtenidos
-            $data = createClass($name,$materia,$grado);
+            $data = createClass($name,$materia,$grado,$profId);
             //Se regresa la respuesta de la función
             echo $data;
         break;

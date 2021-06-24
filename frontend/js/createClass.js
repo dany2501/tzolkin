@@ -4,16 +4,16 @@ $(document).ready(()=>{
     var name = $("#name");
     var grado = $("#grado");
     var button = $("#submit-btn");
-    
+
+    var profId=localStorage.getItem('userId');
+
+    alert(profId);
 
     button.click(()=>{
-
         if(materia.val()!=0 && name.val()!="" &&grado.val()!=0){
-            login(materia.val(),password.val()).then((response)=>{
+            createClass(name.val(),materia.val(),grado.val(),profId).then((response)=>{
                 if(response!=null){
-                    localStorage.setItem('userId',response[0]);
-                    localStorage.setItem('userType',response[3]);
-                    window.location.href="index.php";
+                    window.location.reload();
                 }
             });
         }else{
@@ -25,10 +25,12 @@ $(document).ready(()=>{
 
 });
 
-const login = (username,password)=>{
+const createClass = (name,materia,grado,profId)=>{
     rq = {
-        "username":username,
-        "password":password
+        "name":name,
+        "materia":materia,
+        "grado":grado,
+        "profId":profId
       }
         return $.ajax({
             method: "POST",

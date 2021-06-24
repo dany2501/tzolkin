@@ -32,7 +32,7 @@
                         </div>
                         <span>Lista de clases</span>
                     </a>
-                    <a href="javascript:void(0)" class="item item-active">
+                    <a href="javascript:void(0)" class="item item-active" id="createclass">
                         <div class="icon">
                             <i class="fa fa-edit fa-lg" aria-hidden="true"></i>
                         </div>
@@ -157,7 +157,7 @@
                         $data = mysqli_query($conection,"select * from materia") or die (mysqli_error($conection));
                         while($row = mysqli_fetch_array($data)){
                     ?>
-                            <option value="<?php echo $row['nombre']; ?>"><?php echo $row['nombre']; ?></option>
+                            <option value="<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></option>
                             <?php
                             }
                 
@@ -169,7 +169,7 @@
                         $grado = mysqli_query($conection,"select * from grado") or die (mysqli_error($conection));
                         while($row = mysqli_fetch_array($grado)){
                     ?>
-                            <option value="<?php echo $row['grado']; ?>"><?php echo $row['grado']; ?></option>
+                            <option value="<?php echo $row['id']; ?>"><?php echo $row['grado']; ?></option>
                             <?php
                             }
                 
