@@ -6,9 +6,6 @@ $(document).ready(()=>{
     var button = $("#submit-btn");
 
     var profId=localStorage.getItem('userId');
-
-    alert(profId);
-
     button.click(()=>{
         if(materia.val()!=0 && name.val()!="" &&grado.val()!=0){
             createClass(name.val(),materia.val(),grado.val(),profId).then((response)=>{
