@@ -23,7 +23,7 @@
     <body>
         <!-- Menú lateral -->
         <div class="side-menu">
-            <h3>Bienvenido Juan</h3>
+            <h3 id="name-user">Bienvenido</h3>
             <div>
                 <div class="section">
                     <span>Clases</span>
@@ -33,9 +33,9 @@
                         </div>
                         <span>Lista de clases</span>
                     </a>
-                    <a href="javascript:void(0)" class="item ">
+                    <a href="javascript:void(0)" class="item " id="createclass">
                         <div class="icon">
-                            <i class="fa fa-edit fa-lg" aria-hidden="true" id="createclass"></i>
+                            <i class="fa fa-edit fa-lg" aria-hidden="true" ></i>
                         </div>
                         <span>Crear clase</span>
                     </a>

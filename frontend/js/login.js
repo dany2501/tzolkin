@@ -10,6 +10,7 @@ $(document).ready(()=>{
             login(user.val(),password.val()).then((response)=>{
                 if(response!=null){
                     localStorage.setItem('userId',response[0]);
+                    localStorage.setItem('name',response[1]);
                     localStorage.setItem('userType',response[3]);
                     window.location.href="classes.php";
                 }
